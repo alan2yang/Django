@@ -16,6 +16,8 @@ class BookInfo(models.Model):
         verbose_name='图书'
         verbose_name_plural=verbose_name
 
+    def __str__(self):
+        return self.btitle
 
 # 定义英雄模型类HeroInfo
 class HeroInfo(models.Model):
@@ -33,3 +35,6 @@ class HeroInfo(models.Model):
         db_table='tb_heros'
         verbose_name='英雄'
         verbose_name_plural=verbose_name
+
+    def __str__(self):
+        return self.hname

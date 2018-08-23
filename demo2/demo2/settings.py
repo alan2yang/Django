@@ -55,7 +55,7 @@ ROOT_URLCONF = 'demo2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],  # 定义模板文件路径
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
